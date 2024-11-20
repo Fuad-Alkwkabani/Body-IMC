@@ -10,7 +10,7 @@ public class BmiModel {
     public double calculateBMI() {
         double weight = person.getWeight(); 
         double height = person.getHeight(); 
-        return weight / Math.pow(height, 2); 
+        return weight / Math.pow(height,2); 
     }
 
     public String giveResultsBMI(double bmi) {
