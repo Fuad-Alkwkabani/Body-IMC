@@ -4,18 +4,12 @@ import java.util.Scanner;
 
 public class Bmiview {
 
-    private Scanner scanner;
+    private Scanner scanner = new Scanner(System.in);
 
-    
-    
-
-    public Bmiview(Scanner scanner) {
-        this.scanner = scanner;
-    }
-
+    // Método para solicitar el peso al usuario
     public double solicitarPeso() {
         double peso = -1;
-        while (peso <= 0) { 
+        while (peso <= 0) { // Validar que el peso sea positivo
             try {
                 System.out.print("Ingrese su peso en kilogramos (ejemplo: 70.5): ");
                 peso = Double.parseDouble(scanner.nextLine());
@@ -29,9 +23,10 @@ public class Bmiview {
         return peso;
     }
 
+    // Método para solicitar la altura al usuario
     public double solicitarAltura() {
         double altura = -1;
-        while (altura <= 0) { 
+        while (altura <= 0) { // Validar que la altura sea positiva
             try {
                 System.out.print("Ingrese su altura en metros (ejemplo: 1.75): ");
                 altura = Double.parseDouble(scanner.nextLine());
@@ -45,9 +40,8 @@ public class Bmiview {
         return altura;
     }
 
+    // Método para mostrar el resultado al usuario
     public void mostrarResultado(String clasificacion, double imc) {
         System.out.printf("Su IMC es %.2f y su clasificación es: %s%n", imc, clasificacion);
     }
 }
-
-
