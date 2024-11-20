@@ -1,4 +1,4 @@
-# # Calculadora de IMC (Índice de Masa Corporal)
+#  Calculadora de IMC (Índice de Masa Corporal)
 
 Este proyecto es una aplicación de consola que permite calcular el **Índice de Masa Corporal (IMC)** de una persona basándose en su peso y altura. Además, clasifica el resultado en una de las categorías definidas (por ejemplo, peso normal, sobrepeso, obesidad).
 
@@ -45,13 +45,6 @@ El proyecto sigue una arquitectura basada en **Modelo-Vista-Controlador (MVC)** 
 - **JUnit 5** (para pruebas unitarias).
 
 ---
-
-## **Cómo Ejecutar el Proyecto**
-
-### **1. Compilación**
-Abre una terminal y ejecuta el siguiente comando para compilar todas las clases:
-```bash
-javac *.java
 
 #  **Estructura del Proyecto
 <pre>
